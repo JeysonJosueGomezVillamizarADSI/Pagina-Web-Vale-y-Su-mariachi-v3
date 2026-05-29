@@ -40,7 +40,7 @@
 #slider li {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -180,17 +180,21 @@
 
 @media screen and (max-width: 480px){
     #slider {
-        height: 55vh;
-        min-height: 350px;
+        height: 60vh;
+        min-height: 360px;
     }
     #slider li {
-        background-position: center;
+        background-position: center center;
+    }
+    #slider li .content_slider{
+        padding: 15px 15px;
     }
     .content_slider h2 {
-        font-size: 18pt !important;
+        font-size: 16pt !important;
     }
     .content_slider p {
-        font-size: 12pt !important;
+        font-size: 11pt !important;
+        line-height: 1.4;
     }
     #container-slider .arrowPrev, #container-slider .arrowNext{
         font-size: 18pt;
@@ -200,9 +204,6 @@
     }
     #container-slider .arrowNext{
         right: 15px !important;
-    }
-    #slider li .content_slider{
-        padding: 10px 20px;
     }
     .btnSlider{
         padding: 8px 20px;
