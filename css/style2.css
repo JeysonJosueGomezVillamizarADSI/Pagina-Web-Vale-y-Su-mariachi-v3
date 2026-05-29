@@ -40,7 +40,7 @@
 #slider li {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -179,6 +179,13 @@
 }
 
 @media screen and (max-width: 480px){
+    #slider {
+        height: 55vh;
+        min-height: 350px;
+    }
+    #slider li {
+        background-position: center;
+    }
     .content_slider h2 {
         font-size: 18pt !important;
     }
@@ -193,10 +200,6 @@
     }
     #container-slider .arrowNext{
         right: 15px !important;
-    }
-    #slider{
-        height: 50vh;
-        min-height: 300px;
     }
     #slider li .content_slider{
         padding: 10px 20px;
