@@ -47,15 +47,19 @@ header {
     background: linear-gradient(to right, hsla(205, 79%, 9%, 0.664), hsla(205, 79%, 9%, 0.664)), url(../img/portada.png);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 0 20px;
+    padding: 15px 20px 0 20px;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .menu-toggle {
@@ -80,6 +84,7 @@ header {
     list-style: none;
     gap: 20px;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .nav-links a {
@@ -103,6 +108,7 @@ header .textos-header {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
+    margin: 0;
 }
 
 .textos-header h1 {
@@ -542,8 +548,13 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    header {
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+
     .navbar {
-        padding: 15px 15px 0 15px;
+        padding: 10px 15px 0 15px;
     }
 
     .menu-toggle {
@@ -553,7 +564,7 @@ footer {
 
     .nav-links {
         position: absolute;
-        top: 70px;
+        top: 60px;
         right: 0;
         background: rgba(0, 0, 0, 0.9);
         width: 100%;
@@ -563,6 +574,7 @@ footer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        margin: 0;
     }
 
     .nav-links.active {
@@ -575,8 +587,8 @@ footer {
     }
 
     header .textos-header {
-        min-height: 350px;
-        padding: 30px 15px;
+        min-height: 300px;
+        padding: 20px 15px;
     }
 
     .textos-header h1 {
@@ -647,8 +659,17 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        min-height: 400px;
+        background-attachment: scroll;
+    }
+
     .navbar {
-        padding: 12px 12px 0 12px;
+        padding: 8px 10px 0 10px;
+    }
+
+    .nav-links {
+        top: 50px;
     }
 
     .textos-header h1 {
@@ -657,9 +678,9 @@ footer {
     }
 
     .textos-header h2 {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.5;
-        padding: 0 10px;
+        padding: 0 5px;
     }
 
     .titulo {
