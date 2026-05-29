@@ -47,15 +47,22 @@ header {
     background: linear-gradient(to right, hsla(205, 79%, 9%, 0.664), hsla(205, 79%, 9%, 0.664)), url(../img/portada.png);
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px 0 0;
+    padding: 10px 15px 0 15px;
     flex-wrap: wrap;
+    margin: 0;
+    flex-shrink: 0;
 }
 
 .menu-toggle {
@@ -80,6 +87,7 @@ header {
     list-style: none;
     gap: 20px;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .nav-links a {
@@ -96,13 +104,15 @@ header {
 
 header .textos-header {
     display: flex;
-    min-height: 430px;
+    flex: 1;
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px 40px 20px;
+    margin: 0;
+    min-height: 350px;
 }
 
 .textos-header h1 {
@@ -139,6 +149,7 @@ h2 {
     position: absolute;
     bottom: 0;
     width: 100%;
+    flex-shrink: 0;
 }
 
 /* Quote Section */
@@ -542,8 +553,13 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    header {
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+
     .navbar {
-        padding: 20px 30px 0 0;
+        padding: 8px 12px 0 12px;
     }
 
     .menu-toggle {
@@ -553,7 +569,7 @@ footer {
 
     .nav-links {
         position: absolute;
-        top: 80px;
+        top: 50px;
         right: 0;
         background: rgba(0, 0, 0, 0.9);
         width: 100%;
@@ -563,6 +579,7 @@ footer {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        margin: 0;
     }
 
     .nav-links.active {
@@ -575,8 +592,8 @@ footer {
     }
 
     header .textos-header {
-        min-height: 350px;
-        padding: 30px 15px;
+        min-height: 280px;
+        padding: 15px 15px 30px 15px;
     }
 
     .textos-header h1 {
@@ -586,6 +603,7 @@ footer {
 
     .textos-header h2 {
         font-size: 18px;
+        line-height: 1.6;
     }
 
     .titulo {
@@ -646,17 +664,33 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        min-height: 420px;
+        background-attachment: scroll;
+    }
+
     .navbar {
-        padding: 15px 20px 0 0;
+        padding: 5px 8px 0 8px;
+    }
+
+    .nav-links {
+        top: 45px;
     }
 
     .textos-header h1 {
         font-size: 36px;
+        margin-bottom: 12px;
     }
 
     .textos-header h2 {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.5;
+        padding: 0 3px;
+    }
+
+    header .textos-header {
+        min-height: 260px;
+        padding: 12px 12px 30px 12px;
     }
 
     .titulo {
@@ -692,6 +726,7 @@ footer {
 
     .quote-section h2 {
         font-size: 16px;
+        line-height: 1.4;
     }
 
     #contacto {

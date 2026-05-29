@@ -179,11 +179,22 @@
 }
 
 @media screen and (max-width: 480px){
+    #slider {
+        height: 60vh;
+        min-height: 360px;
+    }
+    #slider li {
+        background-position: center center;
+    }
+    #slider li .content_slider{
+        padding: 15px 15px;
+    }
     .content_slider h2 {
-        font-size: 18pt !important;
+        font-size: 16pt !important;
     }
     .content_slider p {
-        font-size: 12pt !important;
+        font-size: 11pt !important;
+        line-height: 1.4;
     }
     #container-slider .arrowPrev, #container-slider .arrowNext{
         font-size: 18pt;
@@ -193,13 +204,6 @@
     }
     #container-slider .arrowNext{
         right: 15px !important;
-    }
-    #slider{
-        height: 50vh;
-        min-height: 300px;
-    }
-    #slider li .content_slider{
-        padding: 10px 20px;
     }
     .btnSlider{
         padding: 8px 20px;
