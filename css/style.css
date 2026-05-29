@@ -54,7 +54,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px 0 0;
+    padding: 20px 20px 0 20px;
     flex-wrap: wrap;
 }
 
@@ -543,7 +543,7 @@ footer {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .navbar {
-        padding: 20px 30px 0 0;
+        padding: 15px 15px 0 15px;
     }
 
     .menu-toggle {
@@ -553,7 +553,7 @@ footer {
 
     .nav-links {
         position: absolute;
-        top: 80px;
+        top: 70px;
         right: 0;
         background: rgba(0, 0, 0, 0.9);
         width: 100%;
@@ -586,6 +586,7 @@ footer {
 
     .textos-header h2 {
         font-size: 18px;
+        line-height: 1.6;
     }
 
     .titulo {
@@ -647,16 +648,18 @@ footer {
 
 @media screen and (max-width: 480px) {
     .navbar {
-        padding: 15px 20px 0 0;
+        padding: 12px 12px 0 12px;
     }
 
     .textos-header h1 {
         font-size: 36px;
+        margin-bottom: 15px;
     }
 
     .textos-header h2 {
         font-size: 16px;
         line-height: 1.5;
+        padding: 0 10px;
     }
 
     .titulo {
@@ -692,6 +695,7 @@ footer {
 
     .quote-section h2 {
         font-size: 16px;
+        line-height: 1.4;
     }
 
     #contacto {
