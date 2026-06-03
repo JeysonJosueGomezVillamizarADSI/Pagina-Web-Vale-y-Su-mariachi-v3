@@ -48,7 +48,7 @@ header {
     background-size: cover, contain;
     background-attachment: scroll;
     background-position: center, center;
-    background-repeat: no-repeat, repeat-x;
+    background-repeat: no-repeat, no-repeat;;
     position: relative;
     margin: 0;
     padding: 0;
