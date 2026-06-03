@@ -47,7 +47,7 @@ header {
     background: linear-gradient(to right, hsla(205, 79%, 9%, 0.664), hsla(205, 79%, 9%, 0.2)), url(../img/portada-valentina3.jpeg);
     background-size: 50% auto;
     background-attachment: scroll;
-    background-position: center;
+    background-position: center 30%;
     background-repeat: repeat-x;
     position: relative;
     margin: 0;
