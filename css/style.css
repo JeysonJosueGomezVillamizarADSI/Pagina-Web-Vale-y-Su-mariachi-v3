@@ -45,10 +45,10 @@ header {
     min-height: 630px;
     background: #bc4e9c;
     background: linear-gradient(to right, hsla(205, 79%, 9%, 0.664), hsla(205, 79%, 9%, 0.2)), url(../img/portada-valentina3.jpeg);
-    background-size: cover;
+    background-size: 50% auto;
     background-attachment: scroll;
-    background-position: center 15%;
-    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: repeat-x;
     position: relative;
     margin: 0;
     padding: 0;
