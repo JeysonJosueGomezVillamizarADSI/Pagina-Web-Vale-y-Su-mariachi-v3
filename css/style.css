@@ -44,7 +44,7 @@ header {
     width: 100%;
     min-height: 630px;
     background: #bc4e9c;
-    background: linear-gradient(to right, hsla(205, 79%, 9%, 0.664), hsla(205, 79%, 9%, 0.664)), url(../img/portada-valentina3.jpeg);
+    background: linear-gradient(to right, hsla(205, 79%, 9%, 0.664), hsla(205, 79%, 9%, 0.664)), url(../img/portada-valentina.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -64,7 +64,7 @@ header {
     margin: 0;
     flex-shrink: 0;
     background: transparent;
-    border-bottom: none;
+    border: none;
 }
 
 .menu-toggle {
@@ -90,6 +90,13 @@ header {
     gap: 20px;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 0;
+    margin: 0;
+    border: none;
 }
 
 .nav-links a {
@@ -565,7 +572,7 @@ footer {
     .navbar {
         padding: 8px 12px 0 12px;
         background: transparent;
-        border-bottom: none;
+        border: none;
     }
 
     .menu-toggle {
@@ -581,7 +588,7 @@ footer {
         width: 100%;
         flex-direction: column;
         gap: 0;
-        padding: 20px;
+        padding: 0;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
@@ -593,8 +600,9 @@ footer {
     }
 
     .nav-links li {
-        padding: 15px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 15px 20px;
+        margin: 0;
+        border: none;
     }
 
     header .textos-header {
@@ -678,11 +686,17 @@ footer {
     .navbar {
         padding: 5px 8px 0 8px;
         background: transparent;
-        border-bottom: none;
+        border: none;
     }
 
     .nav-links {
         top: 45px;
+    }
+
+    .nav-links li {
+        padding: 15px 20px;
+        margin: 0;
+        border: none;
     }
 
     .textos-header h1 {
