@@ -809,4 +809,17 @@ footer {
         right: 15px;
         font-size: 20px;
     }
+
+    @media screen and (min-width: 768px) {
+    header {
+        /* 1. Volvemos a contain para ver la foto entera sin zoom gigante */
+        background-size: contain !important;
+        
+        /* 2. Asignamos un color de fondo casi negro puro para los lados vacíos */
+        background-color: #03070b !important; 
+        
+        /* Aseguramos que la imagen quede bien centrada */
+        background-position: center center !important;
+    }
+}
 }
