@@ -809,16 +809,16 @@ footer {
         right: 15px;
         font-size: 20px;
     }
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     header {
-        /* 1. Volvemos a 'contain' para que la foto principal se vea entera sin zoom */
-        background-size: contain !important;
+        /* El primer valor (cover) mantiene el filtro oscuro en toda la pantalla, el segundo (contain) ajusta la foto */
+        background-size: cover, contain !important;
         
-        /* 2. Cambiamos a 'repeat-x' para que se clone hacia la izquierda y derecha */
-        background-repeat: repeat-x !important; 
+        /* El filtro oscuro no se repite, pero la foto sí se repite hacia los lados (repeat-x) */
+        background-repeat: no-repeat, repeat-x !important;
         
-        /* 3. Aseguramos que el punto de partida sea el centro */
-        background-position: center center !important;
+        /* Ambos elementos bien centrados */
+        background-position: center, center !important;
     }
 }
 
