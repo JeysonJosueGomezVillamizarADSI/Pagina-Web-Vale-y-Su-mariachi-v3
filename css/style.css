@@ -45,10 +45,10 @@ header {
     min-height: 630px;
     background: #bc4e9c;
     background: linear-gradient(to right, hsla(205, 79%, 9%, 0.664), hsla(205, 79%, 9%, 0.2)), url(../img/portada-valentina3.jpeg);
-    background-size: cover;
+    background-size: cover, contain;
     background-attachment: scroll;
-    background-position: center 15%;
-    background-repeat: no-repeat;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat-x;
     position: relative;
     margin: 0;
     padding: 0;
@@ -808,17 +808,6 @@ footer {
         bottom: 20px;
         right: 15px;
         font-size: 20px;
-    }
-  @media screen and (min-width: 768px) {
-    header {
-        /* El primer valor (cover) mantiene el filtro oscuro en toda la pantalla, el segundo (contain) ajusta la foto */
-        background-size: cover, contain !important;
-        
-        /* El filtro oscuro no se repite, pero la foto sí se repite hacia los lados (repeat-x) */
-        background-repeat: no-repeat, repeat-x !important;
-        
-        /* Ambos elementos bien centrados */
-        background-position: center, center !important;
     }
 }
 
