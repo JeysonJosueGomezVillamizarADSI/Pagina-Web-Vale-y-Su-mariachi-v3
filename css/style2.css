@@ -199,12 +199,14 @@
     #container-slider .arrowPrev, #container-slider .arrowNext{
         font-size: 18pt;
     }
-    #container-slider .arrowPrev{
-        left: 15px;
-    }
-    #container-slider .arrowNext{
-        right: 15px !important;
-    }
+    #container-slider .arrowPrev {
+    left: 15px !important;
+	}
+
+	#container-slider .arrowNext {
+    left: initial !important;
+    right: 15px !important;
+	}
     .btnSlider{
         padding: 8px 20px;
         font-size: 10pt;
