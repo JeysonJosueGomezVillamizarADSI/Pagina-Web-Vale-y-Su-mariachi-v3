@@ -1,0 +1,19 @@
+{
+  "name": "vale-y-su-mariachi",
+  "version": "1.0.0",
+  "description": "Vale y Su Mariachi - Serenatas y Decoraciones",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "mariachi",
+    "serenatas",
+    "decoraciones"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
